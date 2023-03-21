@@ -15,3 +15,32 @@ def dummy_fun(a,b):
 num1 = 5
 num2 = 5
 print(dummy_fun(num1, num2))
+
+# default paramter functions
+def msg(message='hello world'):
+    return message
+out_put = msg()
+print(out_put)
+
+def msg2(name = "Hi Hari", message = "hello world"):
+    return f"{name} {message}"
+out_put = msg2("Hi Jaffer", "Hello country")
+print(out_put)
+
+def msg3(name = "Hi Hari", message = 'hello world'):
+    return f"{name} {message}"
+out_put = msg3(message="Hello country")
+print(out_put)
+
+# default argument functions
+def msg4(name, message):
+    return f"{name} {message}"
+out_put = msg4("hari", "Hello country")
+print(out_put)
+
+def msg4(name, message):
+    return f"{name} {message}"
+out_put = msg4("hari", message= "Hello country")
+print(out_put)
+
+
