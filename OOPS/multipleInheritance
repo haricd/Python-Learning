@@ -1,0 +1,20 @@
+class Car:
+    def start(self):
+        print('Start the Car')
+
+    def go(self):
+        print('Going')
+
+
+class Flyable:
+    def fly(self):
+        print('Flying')
+
+
+class FlyingCar(Flyable, Car):
+    def start(self):
+        super().start() 
+    
+
+flyingcar = FlyingCar()
+print(flyingcar.start(), flyingcar.fly())
